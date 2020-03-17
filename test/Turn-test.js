@@ -49,6 +49,23 @@ describe('Turn', function() {
     });
 
 
+    describe('evaluateGuess Method', function(){
+      it('Should return TRUE if the guess matches the correct answer', function(){
+        let card = new Card(1, "What allows you to define a set of related information using key-value pairs?", ["object", "array", "function"], "object");
+        let turn = new Turn('object', card)
+        expect(turn.evaluateGuess()).to.equal(true)
+      });
+
+      it('Should return FALSE if the guess DOES NOT match the correct answer', function(){
+        let card = new Card(1, "What allows you to define a set of related information using key-value pairs?", ["object", "array", "function"], "object");
+        let turn = new Turn('array', card)
+        expect(turn.evaluateGuess()).to.equal(false)
+      });
+
+
+    });
+
+
 
   });
 
