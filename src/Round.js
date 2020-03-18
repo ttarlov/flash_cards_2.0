@@ -8,6 +8,9 @@ class Round {
     return this.deck.shift()
   }
 
+  takeTurn() {
+    this.turnCount++
+  }
 
 }
 
