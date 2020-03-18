@@ -35,8 +35,8 @@ describe('Round', function() {
   })
 
   describe('returnCurrentCard Method', function(){
-    it.skip('Should return the first card in the deck', function(){
-
+    it('Should return the first card in the deck', function(){
+      expect(round.returnCurrentCard()).to.equal(card1)
     });
 
   });
