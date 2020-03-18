@@ -10,7 +10,9 @@ class Round {
 
   takeTurn() {
     this.turnCount++
+    this.returnCurrentCard()
   }
+
 
 }
 
