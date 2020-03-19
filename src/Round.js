@@ -22,6 +22,17 @@ class Round {
   }
 
 
+  calculatePercentCorrect() {
+    let numOfWrongAnsweres = this.incorrectGuesses.length;
+    let numberOfTurns = this.turnCount;
+    return Math.floor((((numberOfTurns - numOfWrongAnsweres) / numberOfTurns ) * 100))
+
+  }
+
+  endRound() {
+    return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
+  }
+
 
 }
 
