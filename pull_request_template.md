@@ -18,11 +18,12 @@
 
 
 ### Files modified:
-- [ ] index.html
-- [ ] base.scss
-- [ ] styles.scss
+- [ ] Card.js
+- [ ] Game.js
+- [ ] Turn.js
 - [ ] index.js
-- [ ] scripts.js
-- [ ] Other files: 
+- [ ] Card-test.js
+- [ ] Game-test.js  
+- [ ] Turn-test.js
 
 Instructors: @khalidwilliams @hannahhch
