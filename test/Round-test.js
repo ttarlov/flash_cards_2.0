@@ -43,7 +43,7 @@ describe('Round', function() {
   });
 
   describe('takeTurn Method', function(){
-    it('should start with turnCount at zero', function(){
+    it('should start with turnCount property at zero', function(){
       expect(round.turnCount).to.equal(0);
     });
 
@@ -79,10 +79,36 @@ describe('Round', function() {
       round.takeTurn('pug');
       expect(turn.giveFeedback()).to.equal("Wrong, try again!")
     });
+  });
+
+  describe('calculatePercentCorrect Method', function(){
+
+    it('Should calculate and return the percentage of correct guesses', function(){
+      turn = new Turn('sea otter', card1);
+      round.takeTurn('sea otter');
+      turn2 = new Turn('appendix', card2);
+      round.takeTurn('appendix');
+      turn3 = new Turn('Fitzgerald', card3)
+      round.takeTurn('Fitzgerald');
+      expect(round.calculatePercentCorrect()).to.equal(66)
+    });
+  });
+
+
+  describe('endRound Method', function(){
+
+    it('should print a message after round ends with percentage of correctly answered questions', function(){
+      turn = new Turn('sea otter', card1);
+      round.takeTurn('sea otter');
+      turn2 = new Turn('appendix', card2);
+      round.takeTurn('appendix');
+      turn3 = new Turn('Fitzgerald', card3)
+      round.takeTurn('Fitzgerald');
+      expect(round.endRound()).to.equal("** Round over! ** You answered 66% of the questions correctly!")
+    });
 
 
   });
-
 
 
 });
