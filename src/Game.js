@@ -13,8 +13,16 @@ class Game {
   }
 
   printMessage(deck) {
-      console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
------------------------------------------------------------------------`)
+      console.log(`
+            *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+            *                                                                                   *
+            *                                                                                   *
+            *               Welcome to FlashCards! You are playing with ${deck.countCards()} cards.               *
+            *                                                                                   *
+            *                                  ヽ༼ຈل͜ຈ༽ﾉ                                         *
+            *                                                                                   *
+            *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+            `)
   }
 
   printQuestion(round) {
@@ -28,6 +36,7 @@ class Game {
     this.currentRound = round;
     this.printMessage(deck);
     this.printQuestion(round);
+    round.startTimer();
   }
 
 }
