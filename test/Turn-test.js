@@ -66,14 +66,14 @@ describe('Turn', function() {
   describe('giveFeedback Method', function(){
 
     it('should provide positive feedback if correct answer is given', function(){
-      expect(turn.giveFeedback()).to.equal("Correct, Great Job!");
+      expect(turn.giveFeedback()).to.equal(" ◕‿◕ Correct, Great Job!");
     });
 
     it('should provide negative feedback if incorrect answer is given', function(){
       turn = new Turn('array', card)
-      expect(turn.giveFeedback()).to.equal("Wrong, try again!");
+      expect(turn.giveFeedback()).to.equal(" ಠ_ಠ Wrong, try again!");
     });
 
   });
-  
+
 });
