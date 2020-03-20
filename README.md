@@ -1,8 +1,8 @@
 
-![](/screen_shots/shit_1.png)
+![](/screen_shots/shot_1.png)
 
 
-###Project Summary
+### Project Summary
 
 This was me second attempt at first sole project for Module 2 at Turing School of Software and Design. I decide to repeat the Module to gain deeper understanding of advanced JavaScript concepts.
 
@@ -12,14 +12,14 @@ Doing this project for the second time was easier but I wanted to push myself an
 
 
 
-###Playing The Game
+### Playing The Game
 
 To play the game you need to first follow the installation instructions at the bottom of the ReadMe. When you start the game by running ‘node index.js’ you will see a multiple choice question that you can answer by using up/down arrows and enter key to record your answer.
 At the end of the game you will be given percentage of correct answers and how long it took you to to the round.
 
 
 
-###Setup Instructions
+### Setup Instructions
 
 Clone down the forked repo (from your GitHub).
 
