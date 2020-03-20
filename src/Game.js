@@ -19,7 +19,7 @@ class Game {
             *                                                                                   *
             *               Welcome to FlashCards! You are playing with ${deck.countCards()} cards.               *
             *                                                                                   *
-            *                                                                                   *
+            *                                  ヽ༼ຈل͜ຈ༽ﾉ                                         *
             *                                                                                   *
             *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
             `)
