@@ -13,8 +13,16 @@ class Game {
   }
 
   printMessage(deck) {
-      console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
------------------------------------------------------------------------`)
+      console.log(`
+            *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+            *                                                                                   *
+            *                                                                                   *
+            *               Welcome to FlashCards! You are playing with ${deck.countCards()} cards.               *
+            *                                                                                   *
+            *                                                                                   *
+            *                                                                                   *
+            *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+            `)
   }
 
   printQuestion(round) {
