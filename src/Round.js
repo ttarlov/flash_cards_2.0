@@ -40,14 +40,22 @@ endTimer() {
   var diff = endTime - this.timer
   var seconds = Math.round(diff / 1000);
   var minutes = Math.round(diff / 60000)
-  console.log(`****The Round took you ${minutes} Minutes and ${seconds} Seconds****`)
+  console.log(`
+    $*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$
+    $*$*$*$*$*$*$*$*$*$*$*$*$*$ The Round took you ${minutes} Minutes and ${seconds} Seconds $*$*$*$*$*$*$*$*$*
+    $*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*
+    `)
 }
 
 
 
 
   endRound() {
-    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`);
+    console.log(`
+      ************************************************************************************************
+      ****************** ROUND OVER! ** You answered ** ${this.calculatePercentCorrect()}% of the questions correctly! **************
+      ************************************************************************************************
+      `);
     this.endTimer();
     return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
   }
