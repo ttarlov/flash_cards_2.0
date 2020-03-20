@@ -55,6 +55,9 @@ endTimer() {
       ************************************************************************************************
       ****************** ROUND OVER! ** You answered ** ${this.calculatePercentCorrect()}% of the questions correctly! **************
       ************************************************************************************************
+
+                                                (ノಠ益ಠ)ノ彡┻━┻
+
       `);
     this.endTimer();
     return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
