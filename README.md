@@ -1,7 +1,7 @@
 ![](/screen_shots/shot_1.png)
 
 
-## Project Summary
+# Project Summary
 
 This was me second attempt at first sole project for Module 2 at Turing School of Software and Design. I decide to repeat the Module to gain deeper understanding of advanced JavaScript concepts.
 
