@@ -1,5 +1,4 @@
-
-                          ![](/screen_shots/shot_1.png)
+![](/screen_shots/shot_1.png)
 
 
 ###Project Summary
@@ -36,4 +35,4 @@ Running node index.js from the root of your project should result in the followi
 
 ### Game in Action
 
-                                    ![](/screen_shots/flashCards.gif)
+![](/screen_shots/flashCards.gif)
