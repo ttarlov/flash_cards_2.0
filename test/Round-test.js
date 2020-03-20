@@ -32,9 +32,17 @@ describe('Round', function() {
     expect(round).to.be.an.instanceof(Round);
   });
 
-  it ('should take a deck of cards in', function() {
+  it('should take a deck of cards in', function() {
     expect(round.deck).to.deep.equal([card1, card2, card3])
   })
+
+  it('Should start with no incorrect guesses', function(){
+    expect(round.incorrectGuesses).to.deep.equal([]);
+  });
+
+  it('should start with timer at zero', function(){
+    expect(round.timer).to.equal(0)
+  });
 
   describe('returnCurrentCard Method', function(){
     it('Should return the first card in the deck', function(){
@@ -53,10 +61,11 @@ describe('Round', function() {
     });
 
     it('should jump to the next card in deck', function(){
+      expect(round.deck[round.turnCount]).to.equal(card1);
       round.takeTurn();
-      expect(round.deck[0]).to.equal(card2);
+      expect(round.deck[round.turnCount]).to.equal(card2);
       round.takeTurn()
-      expect(round.deck[0]).to.equal(card3);
+      expect(round.deck[round.turnCount]).to.equal(card3);
     });
 
     it('should store incorrect guess via ID', function(){
