@@ -4,7 +4,6 @@ const util = require('./util');
 
 const Round = require('../src/Round')
 const Deck = require('../src/Deck')
-const Card = require('../src/Card')
 
 
 class Game {
@@ -13,7 +12,7 @@ class Game {
   }
 
   printMessage(deck) {
-      console.log(`
+    console.log(`
             *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
             *                                                                                   *
             *                                                                                   *
@@ -26,7 +25,7 @@ class Game {
   }
 
   printQuestion(round) {
-      util.main(round);
+    util.main(round);
   }
 
 

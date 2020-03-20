@@ -1,4 +1,3 @@
-
 const Turn = require('../src/Turn')
 
 class Round {
@@ -15,37 +14,37 @@ class Round {
 
   takeTurn(guess) {
     let turn = new Turn(guess, this.returnCurrentCard())
-    if(turn.evaluateGuess() === false) {
+    if (turn.evaluateGuess() === false) {
       this.incorrectGuesses.push(turn.currentCard.id);
     }
     this.turnCount++
     turn.giveFeedback();
-      return turn.giveFeedback();
+    return turn.giveFeedback();
   }
 
 
   calculatePercentCorrect() {
     let numOfWrongAnsweres = this.incorrectGuesses.length;
     let numberOfTurns = this.turnCount;
-    return Math.floor((((numberOfTurns - numOfWrongAnsweres) / numberOfTurns ) * 100))
+    return Math.floor((((numberOfTurns - numOfWrongAnsweres) / numberOfTurns) * 100))
 
   }
 
-startTimer() {
-  this.timer = new Date();
-}
+  startTimer() {
+    this.timer = new Date();
+  }
 
-endTimer() {
-  var endTime = new Date();
-  var diff = endTime - this.timer
-  var seconds = Math.round(diff / 1000);
-  var minutes = Math.round(diff / 60000)
-  console.log(`
+  endTimer() {
+    var endTime = new Date();
+    var diff = endTime - this.timer
+    var seconds = Math.round(diff / 1000);
+    var minutes = Math.round(diff / 60000)
+    console.log(`
     $*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$
     $*$*$*$*$*$*$*$*$*$*$*$*$*$ The Round took you ${minutes} Minutes and ${seconds} Seconds $*$*$*$*$*$*$*$*$*
     $*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*$*
     `)
-}
+  }
 
 
 
