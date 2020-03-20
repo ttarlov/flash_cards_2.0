@@ -9,7 +9,7 @@ class Round {
   }
 
   returnCurrentCard() {
-    return this.deck.shift()
+    return this.deck[this.turnCount]
   }
 
   takeTurn(guess) {
@@ -19,6 +19,7 @@ class Round {
     }
     this.turnCount++
     turn.giveFeedback();
+      return turn.giveFeedback();
   }
 
 
@@ -30,6 +31,7 @@ class Round {
   }
 
   endRound() {
+    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`);
     return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
   }
 
