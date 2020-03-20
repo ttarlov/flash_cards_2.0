@@ -35,4 +35,6 @@ Running node index.js from the root of your project should result in the followi
 
 ### Game in Action
 
+## Gif Below needs a few seconds to load. Be patient:-)
+
 ![](/screen_shots/flashCards.gif)
